@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Log in</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: url('art3.jpg') no-repeat center center;
+      background-size: cover;
+      text-align: center;
+    }
+
+    .wrapper {
+      width: 400px;
+      height: 500px;
+      background: rgb(122, 142, 172,0.6);
+      color: #0e0808;
+      font-size: large;
+      border-radius: 30px;
+      border: 2px solid rgb(10, 10, 126);
+      padding: 30px 40px;
+      box-shadow: 4px 10px rgb(16, 10, 109,0.4);
+    }
+
+    .wrapper h1 {
+      font-size: 50px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .input-box {
+      position: relative;
+      width: 100%;
+      height: 50px;
+      margin: 20px 0;
+    }
+
+    .input-box input {
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 40px;
+      font-size: 16px;
+      color: #faf4f4;
+      padding: 20px 45px 20px 20px;
+      outline: none;
+    }
+
+    .input-box input::placeholder {
+      color: #fff;
+    }
+
+    .input-box i {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+    }
+
+    .remember-forgot {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14.5px;
+      margin: -10px 0 20px;
+    }
+
+    .remember-forgot label input {
+      accent-color: #fff;
+      margin-right: 3px;
+    }
+
+    .remember-forgot a {
+      color: #170f44;
+      text-decoration: underline;
+    }
+
+    .remember-forgot a:hover {
+      text-decoration: underline;
+    }
+
+    .btn {
+      width: 70%;
+      height: 50px;
+      background: #43488f;
+      font-size: xx-large;
+      color: rgb(252, 249, 249);
+      font-weight: 600;
+      border: none;
+      border-radius: 40px;
+      box-shadow: 0 0 10px rgba(20, 30, 56, 0.8);
+      cursor: grab;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ccc;
+      transform: scale(0.8);
+    }
+
+    .register-link {
+      font-size: 14.5px;
+      text-align: center;
+      margin: 20px 0 10px;
+    }
+    
+    .register-link p a {
+      color: #190f3a;
+      font-size: large;
+      text-decoration: none;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    .register-link p a:hover {
+      text-decoration: underline;
+    }
+
+    .home-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #33357a;
+      color: rgb(248, 243, 243);
+      font-weight: 600;
+      border-radius: 40px;
+      text-decoration: none;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .home-btn:hover {
+      background-color: #ccc;
+      transform: scale(0.8);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <form action="exh.html" method="get">
+      <h1 class="log">Log in</h1>
+
+      <div class="input-box">
+        <input type="text" name="username" placeholder="Username" required />
+        <i class='bx bxs-user'></i>
+      </div>
+
+      <div class="input-box">
+        <input type="password" name="password" placeholder="Password" required />
+        <i class='bx bxs-lock-alt'></i>
+      </div>
+
+      <div class="remember-forgot">
+        <label><input type="checkbox" name="remember" /> Remember me</label>
+        <a href="forgetpassword.html">Forgot password</a>
+      </div>
+
+      <button type="submit" class="btn">Log in</button>
+
+      <div class="register-link">
+        <p>Do not have an account? <a href="signup.html">Sign up</a></p>
+      </div>
+    </form>
+
+    <a href="home.html" class="home-btn">Home Page</a>
+  </div>
+</body>
+</html>

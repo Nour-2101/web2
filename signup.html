@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('art3.jpg') no-repeat center center/cover;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 25px;
+      padding: 40px;
+      width: 350px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      border: 2px solid blue;
+    }
+
+    h2 {
+      text-align: center;
+      color: white;
+      margin-bottom: 25px;
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .input-group input {
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      outline: none;
+      background: rgba(255, 255, 255, 0.9);
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .buttons a {
+      text-decoration: none;
+    }
+
+    .buttons button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      background-color: #1e90ff;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .buttons button:hover {
+      background-color: #1565c0;
+    }
+
+    @media (max-width: 400px) {
+      .container {
+        width: 90%;
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Sign Up</h2>
+    <form action="login.html">
+      <div class="input-group">
+        <input type="text" name="first" placeholder="First Name" required>
+        <input type="text" name="last" placeholder="Last Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+      </div>
+      <div class="buttons">
+        <button type="submit">Confirm</button>
+        <a href="home.html"><button type="button">Home Page</button></a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

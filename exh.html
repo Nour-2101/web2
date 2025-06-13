@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibitions</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        @media (max-width:600px) {
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url(art1.jpg) no-repeat center center;
+            background-size: cover;
+        }
+        .box {
+            width: 90%;
+            max-width: 1200px;
+            background:transparent;
+            border: 1px solid transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 40px;
+            flex-wrap: wrap;
+        }
+
+
+        .c1, .c2, .c3 {
+            width: 300px;
+            height: 200px;
+            border-radius: 30px;
+            background: beige;
+            border: 2px solid none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            background: linear-gradient(135deg, beige, rgb(98, 200, 235));
+            box-shadow: 2px 10px rgb(12, 44, 73,0.7);
+        }
+        .c1:hover,.c2:hover,.c3:hover{
+            transform: translateY(-10px) scale(1.03);
+        }
+        .int{
+            position: absolute;
+            top: 80px;
+            font-size: xxx-large;
+            color: rgb(195, 217, 236);
+            left: 500px;
+            text-shadow: 2px 2px black;
+        }
+        .t1,.t2,.t3{
+            margin-top: 20px;
+            font-size: xx-large;
+        }
+        .b1,.b2,.b3{
+            width: 150px;
+            height: 50px;
+            border-radius: 30px;
+            font-size: x-large;
+            box-shadow: 2px 4px black;
+            margin-top: 30px;
+            background: linear-gradient(135deg, beige, rgb(56, 233, 165));
+        }
+        .b1:hover,.b2:hover,.b3:hover{
+            transform: scale(0.8);
+            background: linear-gradient(135deg, rgb(56, 233, 165), beige);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div class="int">Welcome to The Galary</div>
+    <div class="c1">
+        <h3 class="t1">Exhibition 1</h3>
+        <a href="tickets.html">
+        <button class="b1">Confirm</button>
+        </a>
+    </div>
+    <div class="c2">
+        <h3 class="t2">Exhibition 2</h3>
+        <a href="tickets.html">
+        <button class="b2">Confirm</button>
+        </a>
+    </div>
+    <div class="c3">
+        <h3 class="t3">Exhibition 3</h3>
+        <a href="tickets.html">
+        <button class="b3">Confirm</button>
+        </a>
+    </div>
+        
+    </div>
+    </div>
+</body>
+</html>
